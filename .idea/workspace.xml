@@ -4,11 +4,141 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14243e87-433b-45f1-ac5c-0b4fd0308687" name="默认的" comment="" />
+    <list default="true" id="14243e87-433b-45f1-ac5c-0b4fd0308687" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/EDoS/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Cloud Mode Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Cloud Mode Information/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/CloudLets/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/CloudLets/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Load Balancer Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Load Balancer Information/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/MainInformation/0 Req per sec, 5, Round Robin5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/MainInformation/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/MainInformation/200 Req per sec, 5, Round Robin5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Users Information/False Negative, 0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Users Information/False Negative, 200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Users Information/False Positive, 0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/Users Information/False Positive, 200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/UtilizationInstancesCount/0 Req per sec, 5 5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DDoS/UtilizationInstancesCount/200 Req per sec, 5 5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Cloud Mode Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Cloud Mode Information/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Cloud Mode Information/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Cloud Mode Information/400 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/CloudLets/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/CloudLets/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/CloudLets/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin10 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin10 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin15 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin15 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin15 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin20 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin20 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin20 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin25 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin25 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin25 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin30 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin30 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin30 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin35 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin35 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin35 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin40 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin40 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin40 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin45 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin45 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin45 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin5 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin50 1 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin50 2 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin50 3 .xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Trust Factor Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Trust Factor Information/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Trust Factor Information/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Trust Factor Information/400 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 400 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Positive, 0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Positive, 100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Positive, 150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Positive, 400 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/0 Req per sec, 5 5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/100 Req per sec, 5 5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 10 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 10 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 15 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 15 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 15 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 20 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 20 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 20 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 25 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 25 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 25 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 30 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 30 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 30 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 35 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 35 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 35 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 40 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 40 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 40 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 45 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 45 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 45 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 5 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 5 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 5 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 50 1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 50 2.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5 50 3.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Web Servers Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Web Servers Information/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/Web Servers Information/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/reCAPTCHA Information/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/reCAPTCHA Information/100 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/reCAPTCHA Information/150 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/EDoS/reCAPTCHA Information/400 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/EDoS/EDoS.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/EDoS/EDoS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/CloudLets/200 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/CloudLets/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/CloudLets/500 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/CloudLets/500 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/200 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/500 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Load Balancer Information/500 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/MainInformation/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/MainInformation/500 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/DDoS/MainInformation/0 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 200 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 500 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Users Information/False Negative, 500 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/200 Req per sec, 5, Round Robin.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/UtilizationInstancesCount/500 Req per sec, 5, Round Robin.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Web Servers Information/200 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Web Servers Information/200 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/EDoS/Web Servers Information/500 Req per sec, 5, Round Robin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/output/EDoS/Web Servers Information/500 Req per sec, 5, Round Robin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/org/cloudbus/cloudsim/DatacenterBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/sources/org/cloudbus/cloudsim/DatacenterBroker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="e4ea1e41-89c5-449c-aa96-6ad5b8a44d3a" />
   <component name="MavenImportPreferences">
@@ -19,21 +149,27 @@
     </option>
   </component>
   <component name="ProjectId" id="2NMTWaOl2UvwIqHzb0ne5Rmtkxf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/EDoS-ADS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30588236" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.EDoS">
     <configuration name="EDoS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EDoS.EDoS" />
       <module name="EDoS Attack Defense Shell" />
@@ -47,15 +183,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EDoS.Main" />
+      <module name="EDoS Attack Defense Shell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EDoS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,6 +210,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.EDoS" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -80,12 +228,19 @@
       <workItem from="1680528054821" duration="121000" />
       <workItem from="1680530560779" duration="1015000" />
       <workItem from="1680535147350" duration="1542000" />
-      <workItem from="1680537467992" duration="1477000" />
+      <workItem from="1680537467992" duration="56193000" />
+      <workItem from="1680840251157" duration="168000" />
+      <workItem from="1681219792916" duration="607000" />
+      <workItem from="1682513933524" duration="4040000" />
+      <workItem from="1682748052470" duration="2243000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1680526140964">
@@ -108,29 +263,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="235" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680528173315" />
-    <state width="1876" height="414" key="GridCell.Tab.0.bottom" timestamp="1680535110334">
+    <state x="809" y="417" key="Github.ShareDialog" timestamp="1680579640072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="414" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680535110334" />
-    <state width="1876" height="414" key="GridCell.Tab.0.center" timestamp="1680535110334">
+    <state x="809" y="417" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680579640072" />
+    <state x="596" y="217" key="Github.UntrackedFilesDialog" timestamp="1680579647688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="414" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680535110334" />
-    <state width="1876" height="414" key="GridCell.Tab.0.left" timestamp="1680535110334">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="596" y="217" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680579647688" />
+    <state width="1859" height="44" key="GridCell.Tab.0.bottom" timestamp="1682573790507">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="414" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680535110334" />
-    <state width="1876" height="414" key="GridCell.Tab.0.right" timestamp="1680535110334">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1859" height="44" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1682573790507" />
+    <state width="1876" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680685688895" />
+    <state width="1859" height="44" key="GridCell.Tab.0.center" timestamp="1682573790507">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="414" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680535110334" />
+    <state width="1859" height="44" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1682573790507" />
+    <state width="1876" height="184" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680685688895" />
+    <state width="1859" height="44" key="GridCell.Tab.0.left" timestamp="1682573790507">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1859" height="44" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1682573790507" />
+    <state width="1876" height="184" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680685688895" />
+    <state width="1859" height="44" key="GridCell.Tab.0.right" timestamp="1682573790507">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1859" height="44" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1682573790507" />
+    <state width="1876" height="184" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680685688895" />
+    <state width="1876" height="338" key="GridCell.Tab.1.bottom" timestamp="1680793989765">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1680793989765" />
+    <state width="1876" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680597635988" />
+    <state width="1876" height="338" key="GridCell.Tab.1.center" timestamp="1680793989765">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="338" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1680793989765" />
+    <state width="1876" height="338" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680597635987" />
+    <state width="1876" height="338" key="GridCell.Tab.1.left" timestamp="1680793989765">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="338" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1680793989765" />
+    <state width="1876" height="338" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680597635987" />
+    <state width="1876" height="338" key="GridCell.Tab.1.right" timestamp="1680793989765">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1680793989765" />
+    <state width="1876" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680597635987" />
     <state x="614" y="223" key="NewModule_or_Project.wizard" timestamp="1679473060086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="223" key="NewModule_or_Project.wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1679473060086" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1680537103773">
+    <state x="307" y="188" key="SettingsEditor" timestamp="1680683987667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680537103773" />
+    <state x="307" y="188" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680683987667" />
+    <state x="697" y="223" width="526" height="594" key="find.popup" timestamp="1680594233427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="223" width="526" height="594" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1680594233427" />
   </component>
 </project>

@@ -220,10 +220,10 @@ public class DatacenterBroker extends SimEntity {
 
 					if(count == 60 * (12 - 2)) { //attack
 						System.out.println("DDoS Attack");
-						CloudSim.setAttackRequestsRate(300);
+						CloudSim.setAttackRequestsRate((int)(300*EDoS.accuracy));
 					}
 
-					if(count == 60 * (12 - 4)) { //stop attack
+					if(count == 60 * (12 - 11)) { //stop attack
 						System.out.println("DDoS Attack Stop");
 						CloudSim.setAttackRequestsRate(0);
 					}

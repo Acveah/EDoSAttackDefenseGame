@@ -40,6 +40,10 @@ public class EDoS {
 	/** The vmlist. */
 	private static List<Vm> vmlist;
 
+	public static double accuracy;
+	public static  Integer vmnn;
+	public static  Integer met;
+
 	private static List<Vm> webservers;
 
 	private static List<SystemInformation> avg;
@@ -61,10 +65,10 @@ public class EDoS {
 		//VM Parameters
 		// Important : if you change any of these parameter don't forget to change the same parameter in datacenterbrocker (vmScallingUp function)
 		long size = 1000000; //image size (MB)
-		int ram = 2048; //vm memory (MB)
+		int ram = 1024*8; //vm memory (MB)
 		int mips = 1000;
 		long bw = 10000;
-		int pesNumber = 1; //number of cpus
+		int pesNumber = 4; //number of cpus
 		String vmm = "Xen"; //VMM name
 
 		//create VMs
@@ -93,9 +97,9 @@ public class EDoS {
 		////////////////////////sender information ////////////////////////
 
 		//cloudlet parameters
-		long length = 10;
-		long fileSize = 30; // in byte
-		long outputSize = 30; // in byte
+		long length = 5;
+		long fileSize = 1024; // in byte
+		long outputSize = 1024; // in byte
 		int pesNumber = 1;
 		UtilizationModel utilizationModel = new UtilizationModelFull();
 		//UtilizationModel utilizationModelRAM = new UtilizationModelStochastic();
@@ -158,11 +162,85 @@ public class EDoS {
 	////////////////////////// STATIC METHODS ///////////////////////
 
 	/**
+	 * Prints the Cloudlet objects
+	 * @param list  list of Cloudlets
+	 */
+	private static void printMainInformation(List<Cloudlet> list) {
+		double systemResponseTime = 0;
+		double utilization = 0;
+		double throughput = 0;
+
+		String Data[][] = new String[7][2];
+
+		Cloudlet cloudlet;
+
+		for (int i = 0; i < list.size(); i++) {
+			cloudlet = list.get(i);
+
+			systemResponseTime += cloudlet.getWebServersTimingInfo().getDeparturingTime() - cloudlet.getLoadbalancerTimingInfo().getArrivingTime();
+		}
+
+		for(int i = 0; i < webservers.size(); i++) {
+			ServerInformation vmInfo = webservers.get(i).getInformation();
+
+			utilization += (vmInfo.getProcessingTime() / (vmInfo.getFinishingTime() - vmInfo.getInitiationTime()))*100;
+			throughput +=  (vmInfo.getRequestsServed() / (vmInfo.getFinishingTime() - vmInfo.getInitiationTime()));
+		}
+
+		systemResponseTime /= list.size();
+
+
+		utilization /= webservers.size();
+
+		Data[0][0] = "Response Time (ms)";
+		Data[0][1] = "" + (systemResponseTime * 1000);
+
+		Data[3][0] = "Utilization (%)";
+		Data[3][1] = "" + utilization;
+
+		Data[5][0] = "Througput";
+		Data[5][1] = "" + throughput;
+
+
+		String cloudType;
+		if(CloudSim.getCloudType() == CloudSimTags.DoS) {
+			cloudType = "DoS";
+		} else if(CloudSim.getCloudType() == CloudSimTags.EDoS){
+			cloudType = "EDoS";
+		} else {
+			cloudType = "EDoS_Metigation";
+		}
+
+		String loadBalancerType = CloudSim.getLoadBalancingPolicy() == CloudSimTags.LEAST_LOADED ? "Least Loaded" : "Round Robin";
+
+		String name = CloudSim.getIncomingRequestsRate() + " Req per sec, " + CloudSim.getInitialVMsCount() + ", " + loadBalancerType;
+
+		String FileName = "output/" + cloudType +"/" + "MainInformation/" + name + vmnn +" " +met +" " + ".xls";
+		String SheetName = "Time Sharing";
+		Excel.ExcelWrite(FileName, SheetName, Data);
+	}
+
+	/**
 	 * Creates main() to run this example
 	 */
-	public static void main(String[] args) {
-		//int rates[] = {0, 400, 1200, 2000, 2800, 3600, 4400, 5200, 6000};
+	public static void main(String[] args){
+		accuracy = 0.89;
+		vmnn = 50;
+		met = 3;
+		//        double[][] acc = {
+		      //	1		2		3
+//            5     {0.29, 0.339, 0.334},
+//            10    {0.33, 0.53, 0.55},
+//            15    {0.341, 0.79, 0.74},
+//            20    {0.345, 0.82, 0.749},
+//            25    {0.349, 0.85, 0.81},
+//            30    {0.355, 0.90, 0.84},
+//            35    {0.36, 0.93, 0.85},
+//            40    {0.367, 0.938, 0.86},
+//            45    {0.37, 0.948, 0.87},
+//            50    {0.40, 0.96, 0.89}
 
+		//int rates[] = {0, 400, 1200, 2000, 2800, 3600, 4400, 5200, 6000};
 		//int attackRates[] = {0, 400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000, 4400, 4800, 5200, 5600, 6000, 6400, 6800, 7200, 7600, 8000};
 		//int vmcounts[] =    {7, 11,  17,  21,   27,   31,   37,   41,   47,   51,   57,   61,   67,   71,   77,   81,   87,   91,   97,   101,  107};
 		//int EDoS-Shield[] = {6, 11,  16,  21,   26,   31,   36,   41,   46,   51,   56,   61,   66,   71,   76,   81,   86,   91,   96,   101,  106};
@@ -269,7 +347,7 @@ public class EDoS {
 		int hostId=0;
 		int ram = 200*2048;//2048; //host memory (MB)
 		long storage = 200*1000000;//1000000; //host storage
-		int bw = 200*10000;//10000;
+		int bw = 400*10000;//10000;
 
 		hostList.add(
 				new Host(
@@ -318,7 +396,7 @@ public class EDoS {
 		double cost = 3.0;              // the cost of using processing in this resource (cost of processing per second)
 		double costPerMem = 0.00;		// the cost of using memory in this resource
 		double costPerStorage = 0.00;	// the cost of using storage in this resource
-		double costPerBw = 0.1;			// the cost of using bw in this resource per byte
+		double costPerBw = 0;			// the cost of using bw in this resource per byte
 		LinkedList<Storage> storageList = new LinkedList<Storage>();	//we are not adding SAN devices by now
 
 		DatacenterCharacteristics characteristics = new DatacenterCharacteristics(
@@ -750,69 +828,6 @@ public class EDoS {
 	}
 
 	/**
-	 * Prints the Cloudlet objects
-	 * @param list  list of Cloudlets
-	 */
-	private static void printMainInformation(List<Cloudlet> list) {
-		double systemResponseTime = 0;
-		double utilization = 0;
-		double throughput = 0;
-
-		String Data[][] = new String[7][2];
-
-		Cloudlet cloudlet;
-
-		for (int i = 0; i < list.size(); i++) {
-			cloudlet = list.get(i);
-
-			systemResponseTime += cloudlet.getWebServersTimingInfo().getDeparturingTime() - cloudlet.getLoadbalancerTimingInfo().getArrivingTime();
-		}
-
-		for(int i = 0; i < webservers.size(); i++) {
-			ServerInformation vmInfo = webservers.get(i).getInformation();
-
-			utilization += (vmInfo.getProcessingTime() / (vmInfo.getFinishingTime() - vmInfo.getInitiationTime()))*100;
-			throughput +=  (vmInfo.getRequestsServed() / (vmInfo.getFinishingTime() - vmInfo.getInitiationTime()));
-		}
-
-		systemResponseTime /= list.size();
-
-
-		utilization /= webservers.size();
-
-		Data[0][0] = "Response Time (ms)";
-		Data[0][1] = "" + (systemResponseTime * 1000);
-
-		Data[3][0] = "Utilization (%)";
-		Data[3][1] = "" + utilization;
-
-		Data[5][0] = "Througput";
-		Data[5][1] = "" + throughput;
-
-
-		String cloudType;
-		if(CloudSim.getCloudType() == CloudSimTags.DoS) {
-			cloudType = "DoS";
-		} else if(CloudSim.getCloudType() == CloudSimTags.EDoS){
-			cloudType = "EDoS";
-		} else {
-			cloudType = "EDoS_Metigation";
-		}
-
-		String loadBalancerType = CloudSim.getLoadBalancingPolicy() == CloudSimTags.LEAST_LOADED ? "Least Loaded" : "Round Robin";
-
-		String name = CloudSim.getIncomingRequestsRate() + " Req per sec, " + CloudSim.getInitialVMsCount() + ", " + loadBalancerType;
-
-		String FileName = "output/" + cloudType +"/" + "MainInformation/" + name + ".xls";
-		String SheetName = "Time Sharing";
-		Excel.ExcelWrite(FileName, SheetName, Data);
-	}
-
-
-
-
-
-	/**
 	 * Prints the average cpu utilization
 	 * @param list  list of VmResultInformation
 	 */
@@ -838,7 +853,6 @@ public class EDoS {
 				Data[count][1] = "" + avg.get(i).getUtilization();
 				Data[count][2] = "" + avg.get(i).getResponseTime();
 				Data[count][3] = "" + avg.get(i).getThroughput();
-				Data[count][4] = "" + avg.get(i).getUtilizationRAM();
 				count++;
 
 				if(count > 65535) {
@@ -846,6 +860,19 @@ public class EDoS {
 				}
 			}
 		}
+		double cpusum = 0;
+		int timesum = 0;
+		int bandsum = 0;
+//		for (int i = 1; i <= 720; i++) {
+//			cpusum += Double.parseDouble(Data[i][1]);
+//			timesum += Double.parseDouble(Data[i][2]);
+//			bandsum += Double.parseDouble(Data[i][3]);
+//		}
+//
+//		Data[count][1] = "" + cpusum/720.0;
+//		Data[count][2] = "" + timesum/720.0;
+//		Data[count][3] = "" + bandsum/720.0;
+
 
 		count = 1;
 
@@ -872,10 +899,11 @@ public class EDoS {
 
 		String loadBalancerType = CloudSim.getLoadBalancingPolicy() == CloudSimTags.LEAST_LOADED ? "Least Loaded" : "Round Robin";
 
-		String name = CloudSim.getIncomingRequestsRate() + " Req per sec, " + CloudSim.getInitialVMsCount() + ", " + loadBalancerType;
+		String name = CloudSim.getIncomingRequestsRate() + " Req per sec, " + CloudSim.getInitialVMsCount();
 
-		String FileName = "output/" + cloudType +"/" + "UtilizationInstancesCount/" + name + ".xls";
+		String FileName = "output/" + cloudType +"/" + "UtilizationInstancesCount/" + name + " "+ vmnn +" "+ met + ".xls";
 		String SheetName = "Time Sharing";
 		Excel.ExcelWrite(FileName, SheetName, Data);
 	}
 }
+
